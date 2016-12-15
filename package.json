@@ -1,5 +1,5 @@
 {
-  "name": "github",
+  "name": "opengps",
   "version": "1.0.0",
   "description": "look up ip's gps",
   "main": "index.js",
