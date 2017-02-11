@@ -2,9 +2,6 @@
 
 const gps = require('../index')
 const should = require('should');
-const reqAccu = "https://www.opengps.cn/Data/IP/IPLocHiAcc.ashx"
-const reqNorm = "https://www.opengps.cn/Data/IP/IPSearch.aspx"
-//const co = require('co').co
 
 describe('request ip address', () => {
 
@@ -22,13 +19,4 @@ describe('request ip address', () => {
         ipResult.resultCode.should.equal( '定位失败')
     })
 })
-
-// co(function*() {
-//     const re = yield this.getAddress('116.22.135.245');
-//     console.log('result:',re)    
-// }).then(function (value) {
-//     console.log(value);
-// }, function (err) {
-//     console.error(err.stack);
-// });
 

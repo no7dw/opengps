@@ -15,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "co": "^4.6.0",
+    "mongoose": "^4.8.2",
     "request": "^2.79.0",
     "request-promise": "^4.1.1"
   },
