@@ -1,3 +1,3 @@
 'use strict'
 
-module.exports = require('./lib/coregps')
+module.exports = require('./lib/core')
