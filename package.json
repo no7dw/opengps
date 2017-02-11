@@ -4,7 +4,7 @@
   "description": "look up ip's gps",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test"
+    "test": "./node_modules/.bin/mocha -t 5s -r should -r co-mocha ./test/*.test.js"
   },
   "keywords": [
     "opengps",
