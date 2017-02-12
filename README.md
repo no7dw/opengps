@@ -1,10 +1,7 @@
-### opengps: ip to gps address 
+# opengps: get gps address from ip
 
-shell example:
 
-    `curl --data "ip=116.22.135.246" https://www.opengps.cn/Data/IP/IPLocHiAcc.ashx `
-
-node example:
+### node example:
 
 ```
     const gps = require('opengps')
@@ -13,6 +10,12 @@ node example:
 
 ```
 
+use co to drive to test
+
+```
+    const co = require('co').co
+    co(function *(){ const re = yield gps.getAddress(ip); console.log(re)})
+```
 
     {
         "resultCode": "161",
@@ -26,3 +29,8 @@ node example:
         "loc_Time": "2016 /12/16 00:30:12",
         "remark": ""
     }
+
+shell example:
+
+    `curl --data "ip=116.22.135.246" https://www.opengps.cn/Data/IP/IPLocHiAcc.ashx `
+
