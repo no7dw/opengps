@@ -24,6 +24,11 @@ let starCrawl = function * (){
     let locResult = {success: 0 ,fail : 0}
     for (var i = 0; i < ipRange.length; i++) {
         var ip = ipRange[i]
+        let exists = yield ipAddress.count({ip: ip}).exec()
+        if(exists){
+            console.log('exists', ip, exists)
+            break
+        }
         const re = yield gps.getAddress(ip)
         console.log(ip + ' ->' + JSON.stringify(re))
         let ipResult = re.values[0]
