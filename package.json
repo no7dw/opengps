@@ -14,6 +14,7 @@
   "author": "no7david@gmail.com",
   "license": "ISC",
   "dependencies": {
+    "chromeless": "^1.5.2",
     "co": "^4.6.0",
     "list-ips": "^1.0.6",
     "lodash": "^4.17.4",
